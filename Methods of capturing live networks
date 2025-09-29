@@ -1,0 +1,42 @@
+This repository documents a beginner-level task using Wireshark, a network protocol analyzer.
+The objective is to learn how to capture live network traffic, apply filters, identify multiple protocols, and summarize packet details in a structured report.
+
+Objectives
+Install and configure Wireshark
+Capture live packets from an active network interface
+Generate traffic through website browsing and pinging
+Filter captured packets by protocol (DNS, TCP, HTTP, ICMP, etc.)
+Identify at least three protocols and analyze their details
+Export the captured data as a .pcap file
+Summarize observations in a written report
+. Requirements
+Wireshark (latest version)
+Active Internet connection
+Operating System: Windows / macOS / Linux
+Basic knowledge of terminal/command prompt
+
+
+.Methodology
+Installation → Install Wireshark (and Npcap if required).
+Packet Capture → Start capturing on the active network interface.
+Traffic Generation → Browse a website (e.g., example.com) and ping a server (e.g., google.com).
+Filtering → Apply protocol filters (dns, tcp, http, icmp).
+Protocol Identification → Record at least 3 different protocols observed.
+Exporting Data → Save the capture as a .pcap file in the captures/ folder.
+Reporting → Document findings using the summary-template.md.
+.Expected Output
+A .pcap file containing the captured network traffic.
+A completed summary report with:
+Protocols observed
+Packet details (time, source/destination IP, ports, length, info)
+Observations and analysis
+.Deliverables
+Capture File: mycapture.pcap stored in captures/
+Report File: my-summary.md (based on template)
+.Notes
+If the website uses HTTPS, packet payloads may appear encrypted. Focus on TLS handshake and DNS resolution.
+Use Follow TCP Stream in Wireshark for a complete view of HTTP conversations.
+For better understanding, explore Statistics → Protocol Hierarchy in Wireshark.
+.References
+Wireshark Official Website
+Wireshark Display Filters
